@@ -7,7 +7,6 @@ setwd("~/GitHub/RepData_PeerAssessment1")
 unzip("activity.zip")
 act<-read.csv("activity.csv",na.strings = "NA") 
 zAct<-subset(act,!is.na(act$steps)==TRUE)
-# sAct<-subset(zAct,zAct$steps!=0)
 ```
 
 ## Histogram of the total number of steps taken each day
@@ -173,9 +172,9 @@ median(iStepsByDay$steps)
 ## Are there differences in activity patterns between weekdays and weekends?
 ### _Yes_ 
 
-_-Early morning:      weekday activity > weekend activity_
+_- Early morning:      weekday activity > weekend activity_
 
-_-Later in the day:   weekend activity > weekday activity_
+_- Later in the day:   weekend activity > weekday activity_
 
 _During the week, the level of activity early in the morning is elevated compared with the correspondng morning intervals on the weekends. As the day progresses, the weekday activity is lower than the corresponding intervals during the weekend._
     

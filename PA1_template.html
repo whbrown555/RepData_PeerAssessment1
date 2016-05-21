@@ -117,8 +117,7 @@ $(document).ready(function () {
 <pre class="r"><code>setwd(&quot;~/GitHub/RepData_PeerAssessment1&quot;)
 unzip(&quot;activity.zip&quot;)
 act&lt;-read.csv(&quot;activity.csv&quot;,na.strings = &quot;NA&quot;) 
-zAct&lt;-subset(act,!is.na(act$steps)==TRUE)
-# sAct&lt;-subset(zAct,zAct$steps!=0)</code></pre>
+zAct&lt;-subset(act,!is.na(act$steps)==TRUE)</code></pre>
 </div>
 <div id="histogram-of-the-total-number-of-steps-taken-each-day" class="section level2">
 <h2>Histogram of the total number of steps taken each day</h2>
@@ -224,8 +223,8 @@ hist(iStepsByDay$steps, main = &quot;Histogram of total number of steps taken pe
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 <div id="yes" class="section level3">
 <h3><em>Yes</em></h3>
-<p><em>-Early morning: weekday activity &gt; weekend activity</em></p>
-<p><em>-Later in the day: weekend activity &gt; weekday activity</em></p>
+<p><em>- Early morning: weekday activity &gt; weekend activity</em></p>
+<p><em>- Later in the day: weekend activity &gt; weekday activity</em></p>
 <p><em>During the week, the level of activity early in the morning is elevated compared with the correspondng morning intervals on the weekends. As the day progresses, the weekday activity is lower than the corresponding intervals during the weekend.</em></p>
 </div>
 <div id="panel-plot-comparing-the-average-number-of-steps-taken-per-5-minute-interval-across-weekdays-and-weekends" class="section level3">
